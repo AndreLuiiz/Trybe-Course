@@ -1,5 +1,11 @@
-let n = 5;
+let n = 8;
+let asterisco = "*"
+let linha = "";
+
+for(let index = 0; index < n; index++){
+    linha += asterisco
+}
+
 for(let index = 0; index < n; index ++){
-    let asterisco = "*" * n;
-    console.log("*");
+    console.log(linha);
 }
