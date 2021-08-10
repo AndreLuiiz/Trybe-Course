@@ -98,9 +98,13 @@
         let h3;
         for(let i = 0; i < 3; i += 1) {
             h3 = document.createElement('h3');
+            h3.className = 'description'
             main.appendChild(h3);
         }
 
+        header.className = 'title'
+
+        main.removeChild(sectionLeft);
 
     </script>
   </body>
