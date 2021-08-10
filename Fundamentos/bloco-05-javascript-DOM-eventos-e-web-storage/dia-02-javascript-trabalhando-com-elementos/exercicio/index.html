@@ -59,7 +59,17 @@
     <script>
         let header = document.createElement('h1')
         header.innerText = 'Exercício 5.2 - JavaScript DOM';
-        document.body.appendChild(header); 
+        document.body.appendChild(header);
+        
+        let main = document.createElement('main');
+        main.className = 'main-content'
+        document.body.appendChild(main);
+        
+        let sectionCenter = document.createElement('section');
+        sectionCenter.className = 'center-content'
+        main.appendChild(sectionCenter);
+
+        
     </script>
   </body>
 </html>
