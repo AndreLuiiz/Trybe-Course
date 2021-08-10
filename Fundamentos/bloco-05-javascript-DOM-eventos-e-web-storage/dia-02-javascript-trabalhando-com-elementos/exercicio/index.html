@@ -69,7 +69,23 @@
         sectionCenter.className = 'center-content'
         main.appendChild(sectionCenter);
 
-        
+        let centerText = document.createElement('p');
+        centerText.innerText = 'Aqui fica o texto da seção central do main';
+        sectionCenter.appendChild(centerText);
+
+        let sectionLeft = document.createElement('section');
+        sectionLeft.className = 'left-content';
+        main.appendChild(sectionLeft);
+
+        let sectionRight = document.createElement('section');
+        sectionRight.className = 'Right-content';
+        main.appendChild(sectionRight);
+
+        let image = document.createElement('img');
+        image.src = 'https://picsum.photos/200';
+        image.className = 'small-image'
+        sectionLeft.appendChild(image);
+
     </script>
   </body>
 </html>
