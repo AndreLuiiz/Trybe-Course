@@ -86,6 +86,22 @@
         image.className = 'small-image'
         sectionLeft.appendChild(image);
 
+        let uList = document.createElement('ul')
+        let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for(let number of numbers) {
+            let listItems = document.createElement('li');
+            listItems.innerText = number;
+            uList.appendChild(listItems);
+        }
+        sectionRight.appendChild(uList);
+
+        let h3;
+        for(let i = 0; i < 3; i += 1) {
+            h3 = document.createElement('h3');
+            main.appendChild(h3);
+        }
+
+
     </script>
   </body>
 </html>
