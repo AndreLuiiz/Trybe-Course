@@ -87,6 +87,7 @@
         sectionLeft.appendChild(image);
 
         let uList = document.createElement('ul')
+        uList.className = 'numbers-list'
         let numbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
         for(let number of numbers) {
             let listItems = document.createElement('li');
@@ -105,6 +106,19 @@
         header.className = 'title'
 
         main.removeChild(sectionLeft);
+
+        sectionRight.style = 'margin-right: auto';
+
+        sectionCenter.parentElement.style = 'background-color: green'
+
+        let numbersListItems = document.querySelectorAll('.numbers-list li');
+        for (let item of numbersListItems) {
+            if (item.innerText.includes('nove')) {
+                uList.removeChild(item);
+            } else if (item.innerText.includes('dez')) {
+                uList.removeChild(item);
+            }
+        }
 
     </script>
   </body>
